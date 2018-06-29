@@ -1,0 +1,10 @@
+fibonacci no - down, up, children
+parenthization - down, up, children
+edit distance - down, up,
+text_justification -
+blackjack
+knapsack
+
+Solve all with bottom up as well !
+
+All should have parenting struture as well to get optimal decision not just value !

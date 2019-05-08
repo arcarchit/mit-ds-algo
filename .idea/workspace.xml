@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d3abbbfd-252f-431a-b3a6-c55cdd281bb1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/graph/bfs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/graph/bfs_dfs_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/graph/dfs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/graph/dfs_bfs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/graph/heap.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/graph/topological_sorting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/mit/bellman_ford.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/mit/bfs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/mit/bfs_p.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/mit/dfs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/mit/dfs_all.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/mit/dfs_cycle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/mit/dfs_topological_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/mit/dijkstras.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/mit/heap.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/mit_dp/dp_fibonacci.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/mit_dp/edit_distance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/mit_dp/list_of_problems" beforeDir="false" afterPath="$PROJECT_DIR$/dsalgo/cs/dp/list_of_problems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/mit_dp/matrix_chain_multiplication.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/mit_dp/text_justification.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/simple/binary_search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/simple/in.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/simple/tt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsalgo/to_do/median_running_integer.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1657406040">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="90" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="7" />
+          <entry key="project.open.time.10" value="4" />
+          <entry key="project.open.time.11" value="4" />
+          <entry key="project.open.time.12" value="3" />
+          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="7" />
+          <entry key="project.open.time.6" value="12" />
+          <entry key="project.open.time.7" value="20" />
+          <entry key="project.open.time.8" value="20" />
+          <entry key="project.open.time.9" value="5" />
+          <entry key="project.opened" value="90" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="complexities" value="6" />
+          <entry key="dp_equations" value="3" />
+          <entry key="list_of_problems" value="4" />
+          <entry key="md" value="1" />
+          <entry key="py" value="290" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Markdown" value="4" />
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="Python" value="290" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="26" />
+          <entry key="complexities" value="600" />
+          <entry key="dp_equations" value="445" />
+          <entry key="dummy" value="27" />
+          <entry key="md" value="432" />
+          <entry key="py" value="66134" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Markdown" value="877" />
+          <entry key="PLAIN_TEXT" value="627" />
+          <entry key="Python" value="66160" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dsalgo/cs/new_ds/disjoint_set.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dsalgo/cs/sort/sorts.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>_remove_node</find>
+      <find>del</find>
+      <find>_append_node_to_tail</find>
+      <find>next</find>
+      <find>heapify</find>
+      <find>increase_key</find>
+      <find>ll</find>
+      <find>found</find>
+      <find>parent</find>
+      <find>rebalance</find>
+      <find>get_height</find>
+      <find>path c</find>
+      <find>has_cycle</find>
+      <find>TODO</find>
+      <find>self.ary</find>
+      <find>segment</find>
+      <find>min</find>
+      <find>_decrease_key</find>
+      <find>prin</find>
+      <find>add_edge</find>
+      <find>\t</find>
+      <find>print</find>
+      <find>UnionFind</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>height</replace>
+      <replace>addEdge</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/dsalgo/found_difficult/binary_search_peek_finding.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/tree/traversal.py" />
+        <option value="$PROJECT_DIR$/dsalgo/a_std/heap.py" />
+        <option value="$PROJECT_DIR$/dsalgo/mit/heap.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/heap/max_heap.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/heap/running_median.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/sort/merge_sort.py" />
+        <option value="$PROJECT_DIR$/dsalgo/PracticeDobara/oct7/topo_sort.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/tree/binary_search_tree.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/dp.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/problems/knight_dialer.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/complexities" />
+        <option value="$PROJECT_DIR$/dsalgo/final/graph/shortest_path.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/union_find.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/tree/airplane_scheduling.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/dp/dp_equations" />
+        <option value="$PROJECT_DIR$/dsalgo/final/heap/fibonacci_heap.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/dp/delete.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/SQRTdeComp.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/tree/array_sum_update.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/stack.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/binary_search.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/heap/min_heap.py" />
+        <option value="$PROJECT_DIR$/dsalgo/mit/dijkstras.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/graph/shortest_paths.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/sort/sorts.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/graph/topo_sort.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/gcd.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/pattern_search.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/prime.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/graph/dfs_bfs_am.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/tree/create_bst.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/problems/student_attendance_record.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/problems/water_fall.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/tree/avl_tree.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/problems/reversed_pair.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/dp/dp.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/dp/fibonacci.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/dp/matrix_multiplication.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/graph/minimum_spanning_tree.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/dp/longest_common_subsequence.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/graph/dfs_bfs.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/graph/check_cycle.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/dp/edit_distance.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/graph/reduction.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/heap/HashHeap.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/problems/skyline.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/problems/skyline_2.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/dp/knapsack.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/dp/others.py" />
+        <option value="$PROJECT_DIR$/dsalgo/final/dp/text_justification.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mit-ds-algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mit-ds-algo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/vora/Codebase/mit-ds-algo/dsalgo/mit/dijkstras.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dsalgo/final" />
+      <recent name="$PROJECT_DIR$/dsalgo/final/dp" />
+      <recent name="$PROJECT_DIR$/dsalgo/found_difficult" />
+      <recent name="$PROJECT_DIR$/dsalgo/a_std" />
+      <recent name="$PROJECT_DIR$/dsalgo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.others">
+    <configuration name="edit_distance" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mit-ds-algo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dsalgo/final/dp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dsalgo/final/dp/edit_distance.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="knapsack" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mit-ds-algo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dsalgo/final/dp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dsalgo/final/dp/knapsack.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="others" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mit-ds-algo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dsalgo/final/dp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dsalgo/final/dp/painter_partition.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="shortest_paths" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mit-ds-algo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dsalgo/final/graph" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dsalgo/final/graph/shortest_paths.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="skyline_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mit-ds-algo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dsalgo/final/problems" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dsalgo/final/problems/skyline_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.edit_distance" />
+      <item itemvalue="Python.shortest_paths" />
+      <item itemvalue="Python.skyline_2" />
+      <item itemvalue="Python.knapsack" />
+      <item itemvalue="Python.others" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.others" />
+        <item itemvalue="Python.knapsack" />
+        <item itemvalue="Python.skyline_2" />
+        <item itemvalue="Python.shortest_paths" />
+        <item itemvalue="Python.edit_distance" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3abbbfd-252f-431a-b3a6-c55cdd281bb1" name="Default Changelist" comment="" />
+      <created>1535188734226</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1535188734226</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990177" visible="true" weight="0.21916842" />
+      <window_info id="Structure" order="1" sideWeight="0.50098234" side_tool="true" weight="0.21916842" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39912918" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32891566" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32946298" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.386747" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990177" visible="true" weight="0.21916842" />
+      <window_info id="Structure" order="1" sideWeight="0.50098234" side_tool="true" weight="0.21916842" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39912918" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32891566" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32946298" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.386747" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/pattern_search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/new_ds/minimum_spanning_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" column="34" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/problems/knight_dialer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/problems/student_attendance_record.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/new_ds/segment_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/problems/reversed_pair.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="106" column="30" lean-forward="true" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/graph/dfs_bfs_am.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/gcd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/tree/create_bst.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/dp/longest_common_subsequence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="88" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/graph/dfs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/mit/dfs.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/mit/bfs.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/PracticeDobara/oct_6/graph_bfs.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/graph/dfs_bfs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="95" column="27" lean-forward="true" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/tree/airplane_scheduling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/tree/avl_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/graph/minimum_spanning_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/a_wall/dfs_bfs.py" />
+    <entry file="file://$PROJECT_DIR$/dsalgo/a_wall/dfs_cycle.py" />
+    <entry file="file://$PROJECT_DIR$/dsalgo/a_wall/dijkstras.py" />
+    <entry file="file://$PROJECT_DIR$/dsalgo/found_difficult/binary_search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/graph/reduction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="74" selection-start-column="74" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/heap/HashHeap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/mit/dijkstras.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/problems/skyline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2068">
+          <caret line="172" column="10" lean-forward="true" selection-start-line="172" selection-start-column="10" selection-end-line="172" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/problems/skyline_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/dp/knapsack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="49" column="48" lean-forward="true" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+          <folding>
+            <marker date="1557286933576" expanded="true" signature="955:956" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/dp/dp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+          <folding>
+            <element signature="e#31#1091#0" />
+            <element signature="e#1126#1809#0" />
+            <element signature="e#1854#2787#0" />
+            <element signature="e#2823#2962#0" />
+            <element signature="e#3001#3100#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/dp/fibonacci.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/dp/matrix_multiplication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="57" column="20" lean-forward="true" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/dp/edit_distance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/dp/dp_equations">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/dp/painter_partition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <marker date="1557290693813" expanded="true" signature="151:152" ph="..." />
+            <marker date="1557290693813" expanded="true" signature="792:837" ph="..." />
+            <marker date="1557290693813" expanded="true" signature="884:1539" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/found_difficult/list_max.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/PracticeDobara/oct_6/pivoted_bs.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/PracticeDobara/oct7/draw_circle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-366" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/ds/kd_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/prime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/found_difficult/stack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/found_difficult/binary_search_peek_finding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/graph/shortest_paths.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="208" column="15" selection-start-line="208" selection-start-column="15" selection-end-line="208" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/graph/check_cycle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding>
+            <marker date="1556372289876" expanded="true" signature="445:520" ph="..." />
+            <marker date="1556372289876" expanded="true" signature="542:545" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/graph/topo_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/final/dp/text_justification.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/dp/list_of_problems">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/complexities">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/stack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/union_find.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/new_ds/disjoint_set.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dsalgo/cs/sort/sorts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

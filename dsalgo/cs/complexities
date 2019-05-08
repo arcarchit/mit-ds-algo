@@ -1,0 +1,26 @@
+Search
+Binary Search : O(log N)
+
+
+Sort
+Bubble Sort : O(N2)
+Insertion Sort : O(N2)
+Selection Sort : O(N2)
+Merge Sort : O(N log N), auxillary space of O(N)
+Quick Sort : Average Case (N log N), worst case O(N2)
+
+
+PQ
+Heap
+find_min : O(1)
+insert : O(log N)
+delete : not supported, searching for value become O(N) here, we just remove root
+
+Tree
+binary search tree : search O(log N), insert O(log N), delete O(log N)
+inorder traversal : O(N)
+
+Graph
+BFS : O(V)
+DFS : O(V)
+Dijkstra : O(E log V)

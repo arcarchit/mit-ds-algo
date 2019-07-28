@@ -19,8 +19,14 @@ def kmp(text, pattern):
 	# Time complexity O(n + m) = O(n) we exclude O(m) of preprocessing
 	# Outer loop increases j by +1, total i time
 	# logic can decremtn j by -m
-	# WOrst case is when i and j go fully through the step O(2 *n) = O(n)
+	# Worst case is when i and j go fully through the step O(2 *n) = O(n)
 	# LPS = longest common prefix which is also suffix
+	# lps[i] = the longest proper prefix of pattern[0..i]
+	#               which is also a suffix of pattern[0..i].
+	# lps is of length O(len(pattern))
+	# What if there are no prefix which is also suffix ? Does not matter, we are traversing text only once/
+	# It has worst case complexity of O(n) which is great.
+	# Be aware : It is not palindrome, it is replication.
 
 
 	def pre_process():
@@ -36,13 +42,14 @@ def kmp(text, pattern):
 					lps[i] = 0
 					i = i + 1
 				else:
-					j = lps[j - 1]
+					j = lps[j - 1] # Why (j-1) ? Because (j-1) and (i-1) are match. j and i are not matched. We want to go to same pattern as (j-1)
 
 		return lps
 
 
 	ans = []
 	lps = pre_process()
+	print "lps", lps
 	# print pattern, lps
 	lt, lp = len(text), len(pattern)
 	i, j = 0, 0
@@ -57,7 +64,7 @@ def kmp(text, pattern):
 			if j == 0:
 				i = i + 1
 			else:
-				j = lps[j - 1]
+				j = lps[j - 1] # Why (j-1) ? Because (j-1) and (i-1) are match. j and i are not matched. We want to go to same pattern as (j-1)
 	return ans
 
 

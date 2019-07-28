@@ -1,4 +1,11 @@
 # TODO : Recover parition position
+"""
+Problem :
+We are given board of various sizes, and number of painters.
+Partition this board ampn the painters so that we can paint it in least amount of time.
+
+Variant, what if continuity is not needed ?
+"""
 
 def painter_partition(arr, k):
 	# Time Complexity : O(k * N^2)
@@ -65,6 +72,8 @@ def painter_partition_bu(arr, k):
 					temp = max(c1, c2)
 					ans = min(ans, temp)
 				dp[kk][index] = ans
+
+	print dp
 
 	return dp[-1][-1]
 

@@ -17,6 +17,11 @@
 # Just using rank bring down time complexity to O(log n)
 # Using both rank and path compression makes it almost complex
 
+# It allows to connect nodes, not to separate them
+# I guetree, tree/linked list can help there
+# CLRS had Union find via linked list
+
+
 from collections import defaultdict
 
 class UnionFind:
@@ -24,7 +29,7 @@ class UnionFind:
 	def __init__(self, ll):
 		self.ary = ll
 		self.parent = [i for i in range(len(ll))]
-		self.rank = [0 for _ in range(len(ll))]
+		self.rank = [0 for _ in range(len(ll))] # Rank as height of the tree
 
 	def union(self, i, j):
 		parent_i = self.find_parent(i)

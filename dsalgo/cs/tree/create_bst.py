@@ -1,4 +1,3 @@
-# TODo check for optimization
 
 # Definition for a binary tree node.
 class TreeNode(object):
@@ -6,6 +5,7 @@ class TreeNode(object):
         self.val = x
         self.left = None
         self.right = None
+
 
 class Solution(object):
 	def sortedArrayToBST(self, nums):
@@ -23,6 +23,18 @@ class Solution(object):
 			left = 1, right = 2, mid = 1
 
 			Complexity : O(N)
+
+			Recurrence relation T(N) = 2T(N/2) + C
+			Master theorem
+			T(N) = aT(N/b) + n^d
+			a=2, b=2, d=0, log_b(a) = 1
+
+			I also believe that recursion works with binary tree because maximum depth of recursion is log N.
+				import sys
+				sys.getrecursionlimit()
+				1000
+			And 2^1000 is enough no.
+
 
 			0,4 2
 			0,1 & 3,4 -- 0, 3

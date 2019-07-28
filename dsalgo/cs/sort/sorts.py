@@ -1,3 +1,5 @@
+# TODO : What do you think about iterative merge sort
+# I beleive it is not needed, I have explained in blog post that log depth is awesome, just need to confirm it.
 
 def merge_sort(ll):
 
@@ -80,6 +82,10 @@ def quick_sort(ll):
 
 	sub_sol(0, len(ll))
 	return ll
+
+
+def iterative_mergesort():
+	pass
 
 
 def main():

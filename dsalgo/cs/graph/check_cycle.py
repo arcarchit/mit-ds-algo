@@ -34,7 +34,7 @@ class Graph:
 					else:
 						if g not in visited_set:
 							sub = sub_sol(g)
-							if sub:		# THIS is IMP, you always need to return once cycle if cound, if not keep checking
+							if sub:		# THIS is IMP, you always need to return once cycle if found, if not keep checking
 								return True
 			stack_set.remove(u)
 			return False

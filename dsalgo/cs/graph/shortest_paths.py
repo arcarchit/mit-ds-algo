@@ -8,7 +8,7 @@
 # not with negative cycles
 # However ir can be used to detect negative cycle, in that cae one of the diagonal elements will be non zero
 
-
+# TODO : Dijkstra with PQ once again
 
 from collections import defaultdict
 
@@ -176,6 +176,41 @@ class Graph:
 			print key, "\t\t", ans[key], "\t\t\t", parent[key]
 
 
+def cheapest_path_k_stops():
+	#TODO
+
+	n = 3
+	flights = [[0, 1, 100], [1, 2, 100], [0, 2, 500]]
+	src = 0
+	dst = 2
+	K =0
+
+	graph = defaultdict(list)
+	for ss, dd, ww in flights:
+		graph[ss].append((dd, ww))
+
+	frontier = [(src, 0, 0)]  # node, level, cost
+	ll = 0
+
+	candidates = []
+
+	print graph
+
+	while ll < (K + 1):
+		ll += 1
+
+		new_frontier = []
+		for node, _, cost in frontier:
+			for neighbour, ww in graph[node]:
+				new_frontier.append((neighbour, ll, cost + ww))
+				if neighbour == dst:
+					candidates.append(cost + ww)
+		frontier = new_frontier
+
+	ans = min(candidates) if candidates else -1
+
+	return ans
+
 def main():
 	# graph = Graph()
 	# graph.addEdge(0, 1, 5)
@@ -206,17 +241,19 @@ def main():
 	#
 	# print ans
 
-	g = Graph()
-	g.addEdge('A', 'B', -1)
-	g.addEdge('A', 'C', 4)
-	g.addEdge('B', 'C', 3)
-	g.addEdge('B', 'D', 2)
-	g.addEdge('B', 'E', 2)
-	g.addEdge('D', 'C', 5)
-	g.addEdge('D', 'B', 1)
-	g.addEdge('E', 'D', -3)
+	# g = Graph()
+	# g.addEdge('A', 'B', -1)
+	# g.addEdge('A', 'C', 4)
+	# g.addEdge('B', 'C', 3)
+	# g.addEdge('B', 'D', 2)
+	# g.addEdge('B', 'E', 2)
+	# g.addEdge('D', 'C', 5)
+	# g.addEdge('D', 'B', 1)
+	# g.addEdge('E', 'D', -3)
+	#
+	# g.bellman_ford('A')
 
-	g.bellman_ford('A')
+	print "Chepest fligh K stops /n", cheapest_path_k_stops()
 
 
 if __name__=="__main__":

@@ -212,34 +212,34 @@ def cheapest_path_k_stops():
 	return ans
 
 def main():
-	# graph = Graph()
-	# graph.addEdge(0, 1, 5)
-	# graph.addEdge(1, 2, 3)
-	# graph.addEdge(2, 3, 1)
-	# graph.addEdge(0, 3, 10)
-	# dic = graph.floyd_warshall()
-	# print dic['ans']
-	# print dic['parent']
-	#
-	# graph = Graph()  # It is a directed Graph
-	# graph.addEdge(1, 2, 4)
-	# graph.addEdge(1, 8, 8)
-	# graph.addEdge(2, 3, 8)
-	# graph.addEdge(2, 8, 11)
-	# graph.addEdge(3, 4, 7)
-	# graph.addEdge(3, 9, 2)
-	# graph.addEdge(3, 6, 4)
-	# graph.addEdge(4, 5, 9)
-	# graph.addEdge(4, 6, 14)
-	# graph.addEdge(5, 6, 10)
-	# graph.addEdge(6, 7, 2)
-	# graph.addEdge(7, 8, 1)
-	# graph.addEdge(7, 9, 6)
-	# graph.addEdge(8, 9, 7)
-	# print graph.graph
-	# ans = graph.dijkstra(1)
-	#
-	# print ans
+	graph = Graph()
+	graph.addEdge(0, 1, 5)
+	graph.addEdge(1, 2, 3)
+	graph.addEdge(2, 3, 1)
+	graph.addEdge(0, 3, 10)
+	dic = graph.floyd_warshall()
+	print dic['ans']
+	print dic['parent']
+
+	graph = Graph()  # It is a directed Graph
+	graph.addEdge(1, 2, 4)
+	graph.addEdge(1, 8, 8)
+	graph.addEdge(2, 3, 8)
+	graph.addEdge(2, 8, 11)
+	graph.addEdge(3, 4, 7)
+	graph.addEdge(3, 9, 2)
+	graph.addEdge(3, 6, 4)
+	graph.addEdge(4, 5, 9)
+	graph.addEdge(4, 6, 14)
+	graph.addEdge(5, 6, 10)
+	graph.addEdge(6, 7, 2)
+	graph.addEdge(7, 8, 1)
+	graph.addEdge(7, 9, 6)
+	graph.addEdge(8, 9, 7)
+	print graph.graph
+	ans = graph.dijkstra(1)
+
+	print ans
 
 	# g = Graph()
 	# g.addEdge('A', 'B', -1)

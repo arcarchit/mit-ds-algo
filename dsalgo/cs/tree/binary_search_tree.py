@@ -141,6 +141,36 @@ class BST:
             minn = self.delete_node(found)
 
 
+    def find_greater(self, k):
+
+        def sub_sol(node):
+            if not node:return None
+
+            if k < node.val:
+                child = sub_sol(node.left)
+                return child if child else node
+            else:
+                child = sub_sol(node.right)
+                return child
+        ans = sub_sol(self.tree)
+        return ans.val
+
+    def find_smaller(self, k):
+
+        def sub_sol(node):
+            if not node : return None
+
+            if k > node.val:
+                child = sub_sol(node.right)
+                return child if child else node
+            else:
+                child = sub_sol(node.left)
+                return child
+
+        ans = sub_sol(self.tree)
+        return ans.val
+
+
 
 
 
@@ -154,6 +184,16 @@ def main():
     bst.insert(19)
     bst.insert(12)
     bst.print_tree()
+
+    print ("\nSuccessor/Predecessor\n")
+
+    print bst.find_greater(4), bst.find_greater(6), bst.find_greater(8), bst.find_greater(10), \
+        bst.find_greater(11), bst.find_greater(15)
+
+    print bst.find_smaller(4), bst.find_smaller(6), bst.find_smaller(8), bst.find_smaller(10), \
+        bst.find_smaller(11), bst.find_smaller(15)
+
+
     print bst.search(4)
     print bst.search(5)
     print bst.search(6)
@@ -168,6 +208,9 @@ def main():
     bst.delete_val(10)
     print "**"
     print bst.print_tree()
+
+
+
 
 
 #         10

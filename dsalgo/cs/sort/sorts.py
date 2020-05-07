@@ -90,7 +90,7 @@ def iterative_mergesort():
 
 def main():
 	ll = [1,3,5,2,7,8,4,9,0,6]
-	ss = quick_sort(ll)
+	ss = selection_sort(ll)
 	print ss
 
 if __name__=="__main__":

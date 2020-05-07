@@ -1,152 +1,64 @@
-from collections import defaultdict
+from typing import Tuple, List
+from math import log
 
-class PQ:
-	"""We want a data structure which can
-	1) given a node as a key return distance
-	2) Give a node with minimum distance
-	3) Allow us to update a distance
-		We will find a node
-		We will update distance
-		We will rebalnace heap
-	"""
+rates = [
+    [1, 0.23, 0.25, 16.43, 18.21, 4.94],
+    [4.34, 1, 1.11, 71.40, 79.09, 21.44],
+    [3.93, 0.90, 1, 64.52, 71.48, 19.37],
+    [0.061, 0.014, 0.015, 1, 1.11, 0.30],
+    [0.055, 0.013, 0.014, 0.90, 1, 0.27],
+    [0.20, 0.047, 0.052, 3.33, 3.69, 1],
+]
 
-	def __init__(self):
-		self.heap = []
-		self.dic = {} # Given a node return index in an array
-
-	def add_nodes(self, pq):
-		self._build_heap(pq)
-
-	def _build_heap(self, pq):
-		# I will pass PQ, array of (node, dist)
-		# I want to update heap
-		# I want to populate dictionary
-
-		self.heap = pq
-		for index,tt in enumerate(self.heap):
-			self.dic[tt[0]] = index
-
-		for index in range(len(self.heap) / 2 + 1, -1, -1):
-			self._heapify(index)
-
-	def _heapify(self, index):
-		# Swap parent with smallest child if any smaller child exists
-		child = index
-		left, right = 2*index + 1, 2*index + 2
-		if left < len(self.heap) and self.heap[left][1] < self.heap[child][1]:
-			child = left
-		if right < len(self.heap) and self.heap[right][1] < self.heap[child][1]:
-			child = right
-		if child != index:
-			self.heap[child], self.heap[index] = self.heap[index], self.heap[child]
-			self.dic[self.heap[child][0]] = child
-			self.dic[self.heap[index][0]] = index
-			self._heapify(child)
-
-	def _decrease_key(self, index, new_distance):
-		# When we decrease distance we want this node to move up
-		tt = self.heap[index]
-		self.heap[index] = (tt[0], new_distance)
-		parent = (index-1)/2
-		while parent >= 0:
-			if self.heap[parent][1] > self.heap[index][1]:
-				self.heap[index], self.heap[parent] = self.heap[parent], self.heap[index]
-				self.dic[self.heap[parent][0]] = parent
-				self.dic[self.heap[index][0]] = index
-				index = parent
-				parent = (index-1)/2
-			else:
-				break
-
-	def get_distance(self, node):
-		index = self.dic[node]
-		return self.heap[index][1]
-
-	def get_min(self):
-		node, distance = self.heap[0]
-		del self.dic[node]
-
-		self.heap[0] = self.heap[-1]
-		self.dic[self.heap[0][0]] = 0
-		del self.heap[-1]
-		self._heapify(0)
-
-		return node, distance
-
-	def update_distance(self, node, new_distance):
-		index = self.dic[node]
-		current_distance = self.heap[index][1]
-		if new_distance < current_distance:
-			self._decrease_key(index, new_distance)
-
-	def empty(self):
-		return len(self.heap) == 0
+currencies = ('PLN', 'EUR', 'USD', 'RUB', 'INR', 'MXN')
 
 
-class Graph:
-
-	def __init__(self):
-		self.graph = defaultdict(list)
-		self.vertices = set()
-
-	def addEdge(self, u, v, w):
-		self.graph[u].append((v,w))
-		self.graph[v].append((u,w))
-		self.vertices.update([u,v])
-
-	def dijkstra(self, s):
-		mypq = PQ()
-		BIG_NO = 10 ** 8
-		pq=[]
-		for v in self.vertices:
-			if v==s:
-				pq.append((s,0))
-			else:
-				pq.append((v,BIG_NO))
-		mypq.add_nodes(pq)
-
-		def relax_edge(u,v,w):
-			dist_u, dist_v = ans[u], mypq.get_distance(v)
-			if dist_u + w < dist_v:
-				dist_v = dist_u + w
-				mypq.update_distance(v, dist_v)
-				parent[v] = u
-
-		parent = {s: None}
-
-		ans = {}
-		while not mypq.empty():
-			node, dist = mypq.get_min()
-			ans[node] = dist
-			for neighbour, weight in self.graph[node]:
-				if neighbour not in ans:
-					relax_edge(node, neighbour, weight)
-
-		return ans
+def negate_logarithm_convertor(graph: Tuple[Tuple[float]]) -> List[List[float]]:
+    ''' log of each rate in graph and negate it'''
+    result = [[-log(edge) for edge in row] for row in graph]
+    return result
 
 
+def arbitrage(currency_tuple: tuple, rates_matrix: Tuple[Tuple[float, ...]]):
+    ''' Calculates arbitrage situations and prints out the details of this calculations'''
 
-if __name__ == '__main__':
-	graph = Graph()  # It is a directed Graph
-	graph.addEdge(1, 2, 4)
-	graph.addEdge(1, 8, 8)
-	graph.addEdge(2, 3, 8)
-	graph.addEdge(2, 8, 11)
-	graph.addEdge(3, 4, 7)
-	graph.addEdge(3, 9, 2)
-	graph.addEdge(3, 6, 4)
-	graph.addEdge(4, 5, 9)
-	graph.addEdge(4, 6, 14)
-	graph.addEdge(5, 6, 10)
-	graph.addEdge(6, 7, 2)
-	graph.addEdge(7, 8, 1)
-	graph.addEdge(7, 9, 6)
-	graph.addEdge(8, 9, 7)
-	print graph.graph
-	ans = graph.dijkstra(1)
-	for key in ans:
-		print key, ans[key]
+    trans_graph = negate_logarithm_convertor(rates_matrix)
+
+    # Pick any source vertex -- we can run Bellman-Ford from any vertex and get the right result
+
+    source = 0
+    n = len(trans_graph)
+    min_dist = [float('inf')] * n
+
+    pre = [-1] * n
+
+    min_dist[source] = source
+
+    # 'Relax edges |V-1| times'
+    for _ in range(n - 1):
+        for source_curr in range(n):
+            for dest_curr in range(n):
+                if min_dist[dest_curr] > min_dist[source_curr] + trans_graph[source_curr][dest_curr]:
+                    min_dist[dest_curr] = min_dist[source_curr] + trans_graph[source_curr][dest_curr]
+                    pre[dest_curr] = source_curr
+
+    # if we can still relax edges, then we have a negative cycle
+    for source_curr in range(n):
+        for dest_curr in range(n):
+            if min_dist[dest_curr] > min_dist[source_curr] + trans_graph[source_curr][dest_curr]:
+                # negative cycle exists, and use the predecessor chain to print the cycle
+                print_cycle = [dest_curr, source_curr]
+                # Start from the source and go backwards until you see the source vertex again or any vertex that already exists in print_cycle array
+                while pre[source_curr] not in print_cycle:
+                    print_cycle.append(pre[source_curr])
+                    source_curr = pre[source_curr]
+                print_cycle.append(pre[source_curr])
+                print("Arbitrage Opportunity: \n")
+                print(" --> ".join([currencies[p] for p in print_cycle[::-1]]))
 
 
+if __name__ == "__main__":
+    arbitrage(currencies, rates)
 
-
+# Time Complexity: O(N^3)
+# Space Complexity: O(N^2)

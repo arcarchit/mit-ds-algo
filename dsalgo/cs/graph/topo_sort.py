@@ -16,14 +16,15 @@ class Graph:
 
         def sub_sol(n):
 
-            if n not in visited:
-                visited.add(n)
+            # if n not in visited:
+            #     visited.add(n)
 
-                for neighbour in self.graph[n]:
-                    if neighbour not in visited:
-                        sub_sol(neighbour)
+            for neighbour in self.graph[n]:
+                if neighbour not in visited:
+                    sub_sol(neighbour)
 
-                ans_stack.append(n)
+            visited.add(n)
+            ans_stack.append(n)
 
 
         for v in self.vertices:

@@ -3,29 +3,31 @@ def strickly_less_than(ll, a):
     left, right = 0, len(ll) - 1
 
     while left < right:
-        mid = (left + right + 1) / 2
+        mid = (left + right + 1) / 2 # bias to right
 
         if ll[mid] < a:
             left = mid
         else:
-            right = mid - 1
+            right = mid - 1 # decrease right
 
-    return ll[left]
+    return ll[left] # ans is left
+
+
 
 
 def strickly_greater(ll, a):
     left, right = 0, len(ll) - 1
-
+    # T T T T F F F
     while left < right:
 
-        mid = (left + right) / 2
+        mid = (left + right) / 2 # bias to left
 
         if ll[mid] <= a:
-            left = mid + 1
+            left = mid + 1  # increase left
         else:
             right = mid
 
-    return ll[right]
+    return ll[right]  # ans is right
 
 
 if __name__ == "__main__":

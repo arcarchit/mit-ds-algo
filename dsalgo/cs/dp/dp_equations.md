@@ -23,6 +23,7 @@ Key Learning :
 2. DP is not always about multiplying sub problems or taking maximum of subproblem. Logical OR is also fine for binary answers. 
 3. Always do the memoization first and then convert it into bottom up.
 4. Also if you look at the implementation, choice of taking a candidate or not does not require to create multiple sets. We can use inclusion/exclusion of last element by array length.
+4. This is NP-complete problem (like knapsack) and does not have polynomial time complexity. 
 
 ####Optimal Strategy for a Game
 

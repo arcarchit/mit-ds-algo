@@ -6,7 +6,7 @@ def knapsack(values, weights, capacity):
 
 	items_taken = [0 for _ in range(len(weights))]
 
-	def sub_sol(index, remaining_capacity, val_so_far):
+	def sub_sol(index, remaining_capacity, val_so_far): # No need to pass val_so_far in recursion, it should mimic dp. Have global variable. One workaorund it to have memo on first two only.
 		if index == len(weights):
 			return {
 				'val': val_so_far,

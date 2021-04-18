@@ -85,7 +85,7 @@ class Graph:
 		max_flow = 0
 		BIG_NO = 10 ** 9
 		while True:
-			path_exits, edges = BFS() # O(V^2)
+			path_exits, edges = BFS() # O(V^2) or O(E)
 			if path_exits:
 				delta = min([self.graph[i][j] for i,j in edges]) # O(E)
 				max_flow += delta

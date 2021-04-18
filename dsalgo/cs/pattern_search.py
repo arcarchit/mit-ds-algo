@@ -29,6 +29,30 @@ def kmp(text, pattern):
 	# Be aware : It is not palindrome, it is replication.
 
 
+	def new_lps():
+		# I have written it myself I find it more inntutive
+
+		ans = [0] * len(pattern)  # ans[i] = ss[:i] -> i is inclusive
+		# ans[j] = s[0:j+1] longest prefix which is also suffix (j+1 in python term to make j inclusive)
+
+		i = 0
+		j = 1 # ans will be filled by index j
+		cnt = 0
+
+		while j < len(pattern):
+			if pattern[i] == pattern[j]:
+				cnt += 1
+				ans[j] = cnt
+				i, j = i + 1, j + 1
+			else:
+				# we have initialized j to zero so need to modify anythinng
+				# we just give j one chance if it matches with first chracter
+				if cnt == 0: j = j + 1
+				i = 0
+				cnt = 0
+
+		return ans
+
 	def pre_process():
 		# Time Complexity O(m) where m = len(pattern)
 		lps = [0] * len(pattern)
@@ -47,25 +71,41 @@ def kmp(text, pattern):
 		return lps
 
 
+
+	lps = new_lps()
+
+	i = 0
+	j = 0
 	ans = []
-	lps = pre_process()
-	print "lps", lps
-	# print pattern, lps
-	lt, lp = len(text), len(pattern)
-	i, j = 0, 0
-	while i < lt :
+	while i < len(text):
 		if text[i] == pattern[j]:
 			i, j = i + 1, j + 1
+			if j == len(pattern):
+				ans.append(i - len(pattern))
+				j = lps[j - 1]
 
-		if j == len(pattern):
-			ans.append(i - j)
+		else:
+			if j == 0: i = i + 1
 			j = lps[j - 1]
-		elif i < lt and text[i] != pattern[j]:
-			if j == 0:
-				i = i + 1
-			else:
-				j = lps[j - 1] # Why (j-1) ? Because (j-1) and (i-1) are match. j and i are not matched. We want to go to same pattern as (j-1)
+
 	return ans
+
+	#
+	# lt, lp = len(text), len(pattern)
+	# i, j = 0, 0
+	# while i < lt :
+	# 	if text[i] == pattern[j]:
+	# 		i, j = i + 1, j + 1
+	#
+	# 	if j == len(pattern):
+	# 		ans.append(i - j)
+	# 		j = lps[j - 1] # this is not to be missed
+	# 	elif i < lt and text[i] != pattern[j]:
+	# 		if j == 0:
+	# 			i = i + 1
+	# 		else:
+	# 			j = lps[j - 1] # Why (j-1) ? Because (j-1) and (i-1) are match. j and i are not matched. We want to go to same pattern as (j-1)
+	# return ans
 
 
 def rabin_karp(text, pattern):

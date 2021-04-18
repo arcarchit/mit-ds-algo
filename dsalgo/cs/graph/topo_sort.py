@@ -10,6 +10,8 @@ class Graph:
         self.graph[u].append(v)
         self.vertices.update([u, v])
 
+
+
     def topo_sort(self):
         ans_stack = []
         visited = set()
@@ -84,6 +86,41 @@ def main():
     print "Topological sort ", ll
 
 
+
+def topo_sort(tt):
+    # We are given list of tuples
+    # tt = (x,y) -> x should come before y
+    # y -> x (y depends on x)
+
+    dicc = defaultdict(list)
+    for x, y in tt:
+        dicc[x].append(y)
+
+    ans = []
+    visited = set()
+
+    def sub_sol(node):
+        for n in dicc[node]:
+            if n not in visited:
+                sub_sol(n)
+        ans.append(node)
+        visited.add(node)
+
+    print dicc
+    for v in dicc:
+        if v not in visited:
+            sub_sol(v)
+
+    return ans
+
 if __name__=="__main__":
-    main()
+    # main()
+
+
+    tt = [
+        (5,2), (5,0), (4,0), (4,1), (2,3), (3,1), (7,8)
+    ]
+    print topo_sort(tt)
+
+
 
